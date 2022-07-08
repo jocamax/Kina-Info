@@ -1,0 +1,37 @@
+.navbar{
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+}
+
+.navbar-links{
+    display: flex;
+ 
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar-links h2{
+    font-size: 36px;
+    color: #fff;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-items{
+    display: flex;
+    gap: 30px;
+}
+
+img{
+    width: 140px;
+}
