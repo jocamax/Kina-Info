@@ -5,7 +5,7 @@
 
 .navbar-links{
     display: flex;
- 
+    text-decoration: none;
     justify-content: space-around;
     align-items: center;
 
@@ -19,6 +19,8 @@
 .navbar-logo{
     display: flex;
     align-items: center;
+    text-decoration: none;
+
 }
 
 .navbar-items a{
@@ -34,4 +36,52 @@
 
 img{
     width: 140px;
+}
+
+
+.fabars{
+    color: white;
+    visibility: hidden;
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.navbar-items-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    flex-direction: column;
+    background: var(--main-color);
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.navbar-items-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+
+@media screen and (max-width:804px){
+    .navbar-items{
+        display: none;
+
+    }
+
+    .fabars{
+        display: block;
+        visibility: visible;
+    }
+
+    img{
+        width: 110px;
+    }
 }

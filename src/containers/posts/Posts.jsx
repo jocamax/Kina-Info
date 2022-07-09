@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 import sanityClient from '../../client'
 import './posts.css'
 
-const Posts = ({posts}) => {
+const Posts = (category) => {
   const [postData, setPost] = useState(null)
-
   useEffect(()=>{
      sanityClient
-     .fetch(`*[_type == "post" ]{
+     .fetch(`*[_type == "post"]{
        title,
        slug,
        kategorija,
