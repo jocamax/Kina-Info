@@ -12,8 +12,10 @@ const Navbar = () => {
           <h2>KinaInfo</h2>
         </div>
         <div className="navbar-items">
-          <Link to='/about'>About</Link>
-          <Link to='/about'>Contact me</Link>
+          <Link to='/politika'>Politika</Link>
+          <Link to='/vesti'>Vesti</Link>
+          <Link to='/zanimljivosti'>Zanimljivosti</Link>
+          <Link to='/hrana'>Hrana</Link>
         </div>
       </div>
     </div>

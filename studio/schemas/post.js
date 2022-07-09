@@ -18,10 +18,9 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      name: 'kategorija',
+      title: 'Kategorija',
+      type: 'string',
     },
     {
       name: 'mainImage',
@@ -40,13 +39,14 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime',
+      type: 'string',
     },
     {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
     },
+  
   ],
 
   preview: {
