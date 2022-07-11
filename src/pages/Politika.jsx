@@ -1,8 +1,11 @@
 import React from 'react'
+import PostComponent from '../components/PostComponent'
 
-const Politika = () => {
+const Politika = ({category}) => {
   return (
-    <div>Politika</div>
+    <div>
+    <PostComponent category='Politika'/>
+    </div>
   )
 }
 
