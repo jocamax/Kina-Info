@@ -59,7 +59,7 @@ img{
     padding: 1rem;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 80px;
     margin-top: 1rem;
     width: 100%;
 }
@@ -84,5 +84,21 @@ img{
 
     img{
         width: 110px;
+    }
+}
+
+@media screen and (max-width:344px){
+    .navbar-links h2{
+        font-size: 24px;
+        color: #fff;
+    }
+
+    img{
+        width: 80px;
+    }
+
+    .navbar-items-menu{
+        top: 60px;
+
     }
 }
