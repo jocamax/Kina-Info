@@ -24,13 +24,15 @@ function App() {
     <Navbar/>
     <SortingSection/>
     <Routes>
+      <Route path='/post:slug' element={<SinglePost/>}></Route>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/about' element={<About/>}></Route>
       <Route path='/post/:slug' element={<SinglePost/>}></Route>
+      <Route path='/zanimljivosti' element={<Zanimljivosti/>}></Route>
       <Route path='/politika' element={<Politika/>}></Route>
       <Route path='/vesti' element={<Vesti/>}></Route>
-      <Route path='/zanimljivosti' element={<Zanimljivosti/>}></Route>
       <Route path='/hrana' element={<Hrana/>}></Route>
+      
     </Routes>
     <Footer/>
   </BrowserRouter>

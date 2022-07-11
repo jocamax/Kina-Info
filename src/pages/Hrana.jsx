@@ -1,8 +1,12 @@
 import React from 'react'
+import PostComponent from '../components/PostComponent'
 
-const Hrana = () => {
+const Hrana = ({category}) => {
   return (
-    <div>Hrana</div>
+    <div>
+      <h1>Hrana</h1>
+      <PostComponent category='Hrana'/>
+    </div>
   )
 }
 
