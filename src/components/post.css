@@ -33,11 +33,18 @@
     font-size: 22px;
 }
 
+.post h2:hover{
+    color: var(--main-color);
+}
+
 
 .post p{
-    color: black;
     margin: 5px;
 }
+
+.category-name{
+    color: var(--main-color);
+  }
 
 @media screen and (max-width: 344px){
     .post h2{

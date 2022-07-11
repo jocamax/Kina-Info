@@ -7,7 +7,7 @@ const Posts = (category) => {
   const [postData, setPost] = useState(null)
   useEffect(()=>{
      sanityClient
-     .fetch(`*[_type == "post"]{
+     .fetch(`*[_type == "post"] | order(id desc){
        title,
        slug,
        kategorija,
@@ -38,8 +38,8 @@ const Posts = (category) => {
         </h2>
         </Link>
         <div>
-          <p>{post.kategorija}</p>
-          <p>{post.publishedAt}</p>
+          <p className='category-name'>{post.kategorija}</p>
+          <p >{post.publishedAt}</p>
         </div>
         </div>
         ))}

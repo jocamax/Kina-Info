@@ -7,7 +7,10 @@ const Home = () => {
   return (
     <div className='flexbox'>
       <BigNews/>
+      <div className='title-flex'>
       <h1 className='title-center'>Sve vesti</h1>
+      </div>
+ 
       <Posts/>
     </div>
   )

@@ -8,8 +8,25 @@ body{
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.title-flex{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 .title-center{
-  text-align: center;
-  margin-bottom: 30px;
+  justify-self: center;
   color: rgb(42, 42, 42);
+  border-bottom: 3px solid var(--main-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .title-flex{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
 }

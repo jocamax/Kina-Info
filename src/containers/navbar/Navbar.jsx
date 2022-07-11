@@ -17,8 +17,8 @@ const Navbar = () => {
           <h2>KinaInfo</h2>
         </Link>
         <div className="navbar-items">
+          <Link to='/'>Početna</Link>
           <Link to='/politika'>Politika</Link>
-          <Link to='/vesti'>Vesti</Link>
           <Link to='/zanimljivosti'>Zanimljivosti</Link>
           <Link to='/hrana'>Hrana</Link>
         </div>
@@ -28,8 +28,8 @@ const Navbar = () => {
         }
         {toggleNav && (
           <div className="navbar-items-menu">
+          <Link onClick={() => setToggleNav(false)} to='/'>Početna</Link>
           <Link onClick={() => setToggleNav(false)} to='/politika'>Politika</Link>
-          <Link onClick={() => setToggleNav(false)} to='/vesti'>Vesti</Link>
           <Link onClick={() => setToggleNav(false)} to='/zanimljivosti'>Zanimljivosti</Link>
           <Link onClick={() => setToggleNav(false)} to='/hrana'>Hrana</Link>
         </div>

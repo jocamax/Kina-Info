@@ -30,7 +30,6 @@ function App() {
       <Route path='/post/:slug' element={<SinglePost/>}></Route>
       <Route path='/zanimljivosti' element={<Zanimljivosti/>}></Route>
       <Route path='/politika' element={<Politika/>}></Route>
-      <Route path='/vesti' element={<Vesti/>}></Route>
       <Route path='/hrana' element={<Hrana/>}></Route>
       
     </Routes>

@@ -4,7 +4,9 @@ import PostComponent from '../components/PostComponent'
 const Zanimljivosti = ({category}) => {
   return (
     <div>
-      <h1 className='title-center'>Zanimljivosti:</h1>
+           <div className='title-flex'>
+        <h1 className='title-center'>Zanimljivosti</h1>
+      </div>
       <PostComponent category= "Zanimljivosti" />
     </div>
   )

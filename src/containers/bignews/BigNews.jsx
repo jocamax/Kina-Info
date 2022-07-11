@@ -14,7 +14,7 @@ const BigNews = () => {
   const [postData, setPost] = useState(null)
   useEffect(()=>{
      sanityClient
-     .fetch(`*[_type == "post"]{...}[0..2]`)
+     .fetch(`*[_type == "bigpost"] | order(id asc){...}[0..2]`)
      .then((data)=> setPost(data))
      .catch(console.error)
 
@@ -22,7 +22,9 @@ const BigNews = () => {
 
   return (
     <div>
-      <h1 className='title-center'>Najnovije vesti</h1>
+      <div className='title-flex'>
+        <h1 className='title-center'>Najnovije vesti</h1>
+      </div>
       <div className='posts-container-big'>
       {postData && postData.map((post, index) => (
       <div className='post-big' key={index}>
@@ -33,8 +35,8 @@ const BigNews = () => {
         </h2>
         </Link>
         <div>
-          <p>{post.kategorija}</p>
-          <p>{post.publishedAt}</p>
+          <p className='category-name'>{post.kategorija}</p>
+          <p >{post.publishedAt}</p>
         </div>
         </div>
         ))}

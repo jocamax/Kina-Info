@@ -38,7 +38,7 @@ const PostComponent = (prop) => {
         </h2>
         </Link>
         <div>
-          <p>{post.kategorija}</p>
+          <p className='category-name'>{post.kategorija}</p>
           <p>{post.publishedAt}</p>
         </div>
         </div>
