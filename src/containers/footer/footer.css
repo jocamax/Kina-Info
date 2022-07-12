@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
     gap: 10%;
     background-color: var(--main-color);
     position: relative;
@@ -63,4 +64,38 @@
 .link-mini img{
     width: 100px;
     height: 60px;
+}
+
+@media screen and (max-width:684px) {
+    .footer-container{
+        flex-direction: column; 
+        height: auto;
+        gap: 40px;
+    }
+        
+}
+
+@media screen and (max-width:386px) {
+    .post-mini{
+        width: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .link-mini img{
+       width: 80px;
+       height: 50px;
+
+    }
+
+    .post-mini h2{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .category-name-mini{
+        font-size: 10px;
+        display: inline-block;
+    }
+    
 }
