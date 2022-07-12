@@ -56,7 +56,13 @@ const SinglePost = () => {
         <h3 className='title-center'>Novo</h3>
       {postData && postData.map((post, index) => (
       <div className='post-mini-sp' key={index}>
-        <Link className='link-mini-sp' to={`/post/${post.slug.current}`} key={post.slug.current}> 
+        <Link 
+        className='link-mini-sp' 
+        to={`/post/${post.slug.current}`} 
+        key={post.slug.current}
+        onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}> 
         <div className='image-div'>
           <img className='mini-image-sp' src={urlFor(post.mainImage).url()} alt="" />
         </div>

@@ -39,7 +39,13 @@ const Footer = () => {
       <div className='posts-container-mini'>
       {postData && postData.map((post, index) => (
       <div className='post-mini' key={index}>
-        <Link className='link-mini' to={`/post/${post.slug.current}`} key={post.slug.current}> 
+        <Link 
+        className='link-mini' 
+        to={`/post/${post.slug.current}`} 
+        key={post.slug.current}
+        onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}> 
         <img src={urlFor(post.mainImage).url()} alt="" />
         <h2>
           {post.title}

@@ -31,7 +31,13 @@ const PostComponent = (prop) => {
       <div className='posts-container'>
       {postData && postData.map((post, index) => (
       <div className='post' key={index}>
-        <Link className='link' to={`/post/${post.slug.current}`} key={post.slug.current}> 
+        <Link 
+        className='link' 
+        to={`/post/${post.slug.current}`} 
+        key={post.slug.current}
+        onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}> 
         <img src={post.mainImage.asset.url} alt="" />
         <h2>
           {post.title}

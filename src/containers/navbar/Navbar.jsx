@@ -27,7 +27,10 @@ const Navbar = () => {
           <FaBars className='fabars' onClick={() => setToggleNav(true)}/>
         }
         {toggleNav && (
-          <div className="navbar-items-menu">
+          <div className="navbar-items-menu"
+          onClick={()=> {
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+          }}>
           <Link onClick={() => setToggleNav(false)} to='/'>Početna</Link>
           <Link onClick={() => setToggleNav(false)} to='/politika'>Politika</Link>
           <Link onClick={() => setToggleNav(false)} to='/zanimljivosti'>Zanimljivosti</Link>

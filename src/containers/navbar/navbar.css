@@ -2,6 +2,7 @@
     padding: 0.5rem 2rem;
     background-color: var(--main-color);
     margin-bottom: 1.5rem;
+
 }
 
 .navbar-links{
@@ -62,6 +63,7 @@ img{
     top: 80px;
     margin-top: 1rem;
     width: 100%;
+    z-index: 2;
 }
 
 .navbar-items-menu a{
@@ -91,6 +93,7 @@ img{
     .navbar-links h2{
         font-size: 24px;
         color: #fff;
+
     }
 
     img{
