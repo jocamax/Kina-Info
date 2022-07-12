@@ -17,10 +17,11 @@ const BigNews = () => {
      .fetch(`*[_type == "bigpost"] | order(id asc){...}[0..2]`)
      .then((data)=> setPost(data))
      .catch(console.error)
-
   }, [])
 
+
   return (
+    
     <div>
       <div className='title-flex'>
         <h1 className='title-center'>Najnovije vesti</h1>

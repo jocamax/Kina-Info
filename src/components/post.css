@@ -1,7 +1,7 @@
 .post{
     display: flex;
     flex-direction: column;
-    height: 320px;
+    height: 300px;
     border-radius: 5px;
     -webkit-box-shadow: 3px 3px 9px 1px rgba(0,0,0,0.1); 
     box-shadow: 3px 3px 9px 1px rgba(0,0,0,0.1);
@@ -20,7 +20,7 @@
 
 .post img{
     width: 320px;
-    height: 200px;
+    height: 180px;
     border-radius: 5px 5px 0px 0px;
     overflow: hidden;
     object-fit:cover;
@@ -30,7 +30,7 @@
 .post h2{
     color: black;
     margin: 0 0.5rem;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .post h2:hover{
