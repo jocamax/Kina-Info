@@ -60,7 +60,7 @@ img{
     padding: 1rem;
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 70px;
     margin-top: 1rem;
     width: 100%;
     z-index: 2;
@@ -74,6 +74,19 @@ img{
 
 
 @media screen and (max-width:804px){
+    
+    .navbar{
+        padding:0.5rem;
+        margin-bottom: 1rem;
+    
+    }
+
+    .navbar-links h2{
+        font-size: 30px;
+        color: #fff;
+
+    }
+
     .navbar-items{
         display: none;
 
@@ -85,7 +98,7 @@ img{
     }
 
     img{
-        width: 110px;
+        width: 100px;
     }
 }
 

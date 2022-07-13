@@ -28,10 +28,26 @@ const Footer = () => {
           <img src={Logo} alt="" /> 
           <h2>KinaInfo</h2>
         </Link>
-        <Link to='/'>Početna</Link>
-        <Link to='/politika'>Politika</Link>
-        <Link to='/zanimljivosti'>Zanimljivosti</Link>
-        <Link to='/hrana'>Hrana</Link>
+        <Link 
+        to='/'  
+        onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>Početna</Link>
+        <Link 
+        to='/politika'
+         onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>Politika</Link>
+        <Link 
+        to='/zanimljivosti'
+        onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>Zanimljivosti</Link>
+        <Link 
+        to='/hrana'
+        onClick={()=> {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>Hrana</Link>
       </div>
 
       <div className="footer-news">
